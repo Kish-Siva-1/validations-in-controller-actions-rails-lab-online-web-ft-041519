@@ -10,6 +10,8 @@ class AuthorsController < ApplicationController
     @author = Author.create!(author_params)
 
     redirect_to author_path(@author)
+
+    render 
   end
 
   private
