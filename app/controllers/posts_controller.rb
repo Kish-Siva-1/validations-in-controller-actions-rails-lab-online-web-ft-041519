@@ -10,8 +10,9 @@ class PostsController < ApplicationController
   def update
     if @post.valid?
       @post.update(post_params)
-
-    redirect_to post_path(@post)
+    else 
+      redirect_to post_path(@post)
+    end
   end
 
   private
